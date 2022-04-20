@@ -10,7 +10,7 @@ Nama Anggota Kelompok : <br>
 
 
 <h1>Projek Aplikasi Heafirst</h1> <br>
-Heafirst adalah aplikasi yang dikembangkan dengan tujuan mendukung pola hidup sehat beserta hal pendukung untuk hidup sehat<br>
-!!Under development
+<p>Heafirst adalah aplikasi mobile yang dikembangkan oleh tiga mahasiswa Universitas Lampung dengan tujuan mendukung penerapan pola hidup sehat beserta hal pendukung lainnya untuk menunjang kesehatan diri</p>
+
 
 
