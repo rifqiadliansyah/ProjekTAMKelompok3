@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
 
 <!-- Bagian Profil      -->
     <RelativeLayout
@@ -20,30 +18,90 @@
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="10dp"
-            android:src="@drawable/spiderrev"></de.hdodenhof.circleimageview.CircleImageView>
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            android:src="@drawable/ic_logo"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+    </RelativeLayout>
+
+
+<!-- Bagian attensi   -->
+
+    <RelativeLayout
+        android:layout_width="346dp"
+        android:layout_height="155dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/lengkung"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="-40dp"
+            android:src="@drawable/masker"></ImageView>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="16dp"
             android:fontFamily="@font/poppins"
-            android:text="Kelompok 3 TAM"
+            android:text="@string/peringatan"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="16dp"
             android:textStyle="bold"></TextView>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="30dp"
-            android:text="Status : Online"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/poppins"
+            android:text="#AyoHidupSehat"
             android:textColor="@color/white"
-            android:textSize="10sp"></TextView>
-    </RelativeLayout>
-   </LinearLayout>
+            android:textSize="12sp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/poppins"
+            android:text="#HeafirstIndonesia"
+            android:textColor="@color/white"
+            android:textSize="12sp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="130dp"
+            android:fontFamily="@font/poppins"
+            android:text="#CovidPastiKalah"
+            android:textColor="@color/white"
+            android:textSize="12sp"></TextView>
 
-</ScrollView>
+    </RelativeLayout>
+
+
+<!--Bagian fitur-->
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="3"></GridView>
+
+
+
+
+
+</LinearLayout>
+
