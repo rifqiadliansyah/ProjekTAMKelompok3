@@ -1,5 +1,5 @@
 # ProjekTAMKelompok3
-<img src="![logo](https://user-images.githubusercontent.com/71004111/164275301-a13b05c4-bb42-4cc1-add1-7c36f9657ad9.svg)" alt="Girl in a jacket" width="500" height="600">
+<img src= ![logo](https://user-images.githubusercontent.com/71004111/164275301-a13b05c4-bb42-4cc1-add1-7c36f9657ad9.svg) alt="logo" width="200" height="200">
 
 
 <br>
