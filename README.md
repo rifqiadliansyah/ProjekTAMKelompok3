@@ -9,10 +9,8 @@ Nama Anggota Kelompok : <br>
 3.Rayhan Akbar Kurniawan-2017051071<br><br>
 
 
-<element>**Projek Aplikasi Heafirst**</element> <br>
+<h1>**Projek Aplikasi Heafirst**</h1> <br>
 Heafirst adalah aplikasi yang dikembangkan dengan tujuan mendukung pola hidup sehat beserta hal pendukung untuk hidup sehat<br>
 !!Under development
 
-element{
-font-size:50;
-}
+
