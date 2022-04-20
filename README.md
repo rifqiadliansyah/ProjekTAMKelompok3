@@ -14,12 +14,15 @@ Nama Anggota Kelompok : <br>
 
 Heafirst memiliki fitur utama :<br>
 <ul>
-<li>Konsultasi Pola Hidup Sehat dengan Pakar Kesehatan.<br></li>
-<li> Menghitung Berat Badan Ideal.<br></li>
-<li>Menghitung Asupan Mineral yang dibutuhkan tubuh.<br></li>
-<li> Rekomendasi Olahrga<br></li></ul>
+    <li>Konsultasi Pola Hidup Sehat dengan Pakar Kesehatan.</li>
+    <li> Menghitung Berat Badan Ideal.</li>
+    <li>Menghitung Asupan Mineral yang dibutuhkan tubuh.</li>
+    <li> Rekomendasi Olahrga</li>
+</ul>
 Serta Fitur Tambahan :<br>
-⋅⋅* Statistik Penyebaran Covid
+<ul>
+    <li>Statistik Penyebaran Covid</li>
+<ul>
 
 
 
