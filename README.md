@@ -13,12 +13,12 @@ Nama Anggota Kelompok : <br>
 <p>Heafirst adalah aplikasi mobile yang dikembangkan oleh tiga mahasiswa Universitas Lampung dengan tujuan mendukung penerapan pola hidup sehat beserta hal pendukung lainnya untuk menunjang kesehatan diri.</p><br>
 
 Heafirst memiliki fitur utama :<br>
-..*Konsultasi Pola Hidup Sehat dengan Pakar Kesehatan.<br>
-..*Menghitung Berat Badan Ideal.<br>
-..*Menghitung Asupan Mineral yang dibutuhkan tubuh.<br>
-..*Rekomendasi Olahrga<br>
+..* Konsultasi Pola Hidup Sehat dengan Pakar Kesehatan.<br>
+..* Menghitung Berat Badan Ideal.<br>
+..* Menghitung Asupan Mineral yang dibutuhkan tubuh.<br>
+..* Rekomendasi Olahrga<br>
 Serta Fitur Tambahan :<br>
-..*Statistik Penyebaran Covid
+..* Statistik Penyebaran Covid
 
 
 
