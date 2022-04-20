@@ -2,8 +2,6 @@
 
 ![<img src="https://user-images.githubusercontent.com/71004111/164275818-9fce82c1-38d4-48a8-af31-9cc0182f4897.svg" width="200" height="200"/>](https://user-images.githubusercontent.com/71004111/164275818-9fce82c1-38d4-48a8-af31-9cc0182f4897.svg)
 
-
-<br>
 <br>
 Nama Anggota Kelompok : <br>
 1.Rifqi Adliansyah-2017051003<br>
