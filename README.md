@@ -1,6 +1,6 @@
 # ProjekTAMKelompok3
 
-![logo](https://user-images.githubusercontent.com/71004111/164275818-9fce82c1-38d4-48a8-af31-9cc0182f4897.svg =300x300)
+![<img src="https://user-images.githubusercontent.com/71004111/164275818-9fce82c1-38d4-48a8-af31-9cc0182f4897.svg" width="200" height="200"/>](https://user-images.githubusercontent.com/71004111/164275818-9fce82c1-38d4-48a8-af31-9cc0182f4897.svg)
 
 
 <br>
