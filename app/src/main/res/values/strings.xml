@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">projekkelompok3</string>
     <string name="peringatan">Ingat Gunakan Masker Selalu!</string>
+    <string name="hitung">hitung</string>
+    <string name="BeratBadan">Berat Badan</string>
+    <string name="konsultasi">Mari Kita Berkonsultasi !</string>
+    <string name="datamineral">Masukan Data Mineral</string>
+    <string name="hasil">Hasil</string>
 </resources>
