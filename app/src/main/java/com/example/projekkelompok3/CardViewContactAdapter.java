@@ -30,7 +30,7 @@ import androidx.fragment.app.FragmentActivity;
 
             @Override
             public CardViewViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_konsultasi, parent, false);
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.contact_item, parent, false);
             CardViewViewHolder viewHolder = new CardViewViewHolder(view);
             return viewHolder;
             }
@@ -40,8 +40,7 @@ import androidx.fragment.app.FragmentActivity;
             Kontak c = getContactList().get(position);
             Glide.with(context).load(c.getFoto()).override(350,550).into(holder.imgPhoto);
             holder.tvName.setText(c.getNama());
-            holder.btnCall.setOnClickListener(new CustomOnItemClickListener(position,
-                    new CustomOnItemClickListener.OnItemClickCallback() {
+            holder.btnCall.setOnClickListener(new CustomOnItemClickListener(position, new CustomOnItemClickListener.OnItemClickCallback() {
 
                 @Override
                 public void onItemClicked(View view, int position) {
@@ -49,8 +48,7 @@ import androidx.fragment.app.FragmentActivity;
 
                             }
     }));
-            holder.btnMessage.setOnClickListener(new CustomOnItemClickListener(position, new
-                    CustomOnItemClickListener.OnItemClickCallback() {
+            holder.btnMessage.setOnClickListener(new CustomOnItemClickListener(position, new CustomOnItemClickListener.OnItemClickCallback() {
 
                 @Override
                 public void onItemClicked(View view, int position) {
