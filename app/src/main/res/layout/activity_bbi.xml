@@ -12,22 +12,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama Lengkap" />
+
     <EditText
         android:id="@+id/namalengkap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minWidth="48dp"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tinggi Badan (cm)" />
+
     <EditText
         android:id="@+id/tinggibadan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minWidth="48dp"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,10 +67,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Berat Badan Ideal Anda" />
+
     <EditText
         android:id="@+id/bbi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minWidth="48dp"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
 </LinearLayout>
