@@ -14,43 +14,89 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="16dp"
+        android:background="@drawable/lengkung"
+
         >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tinggi Badan (cm)" />
+        android:layout_marginTop="@dimen/layout_margin_vertical"
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
+        android:text="Tinggi Badan (cm)"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium" />
 
     <EditText
         android:layout_marginTop="@dimen/layout_margin_vertical"
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
+        android:layout_marginRight="@dimen/layout_margin_horizontal"
         android:id="@+id/tinggibadan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:backgroundTint="@color/white"
+        />
     <TextView
         android:layout_marginTop="@dimen/layout_margin_vertical"
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jenis Kelamin" />
+        android:text="Jenis Kelamin"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"/>
     <RadioGroup
+
         android:id="@+id/list_jawab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/layout_margin_vertical">
+        android:layout_marginTop="@dimen/layout_margin_vertical"
+
+        android:layout_marginLeft="@dimen/layout_margin_horizontal">
         <RadioButton
+            android:buttonTint="@color/white"
             android:id="@+id/pria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
             android:text="Pria" />
         <RadioButton
+            android:buttonTint="@color/white"
             android:id="@+id/wanita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
             android:text="Wanita" />
     </RadioGroup>
+        <TextView
+            android:layout_marginTop="@dimen/layout_margin_vertical"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Berat Badan Ideal Anda"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="@dimen/layout_margin_horizontal"/>
+
+        <TextView
+            android:id="@+id/bbi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_horizontal"
+            android:layout_marginTop="@dimen/layout_margin_vertical"
+            android:fontFamily="@font/poppins_medium"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+
+            android:textColor="@color/white" />
+    </LinearLayout>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_marginTop="@dimen/layout_margin_vertical"
         android:id="@+id/button1"
@@ -63,20 +109,6 @@
         android:layout_gravity="center"
         android:background="@drawable/lengkung">
     </androidx.appcompat.widget.AppCompatButton>
-    <TextView
-        android:layout_marginTop="@dimen/layout_margin_vertical"
-        android:paddingTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Berat Badan Ideal Anda" />
 
-    <TextView
-        android:layout_marginTop="@dimen/layout_margin_vertical"
-        android:id="@+id/bbi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
-    </LinearLayout>
+
 </LinearLayout>
