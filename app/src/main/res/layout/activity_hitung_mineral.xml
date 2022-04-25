@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/layout_margin_vertical"
             android:gravity="center"
-            android:text="@string/datamineral"
+            android:text="Data mineral"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -37,7 +37,7 @@
             android:layout_marginLeft="@dimen/layout_margin_horizontal"
             android:layout_marginTop="40dp"
             android:layout_marginRight="@dimen/layout_margin_horizontal"
-            android:hint="@string/BeratBadan"
+            android:hint="Berat badan"
             android:inputType="numberDecimal"
             android:textColor="@color/white"
              />
@@ -75,7 +75,7 @@
         android:layout_marginTop="16dp"
         android:textAllCaps="false"
         android:layout_gravity="center"
-        android:text="@string/hitung"
+        android:text="Hitung"
         android:textColor="@color/white"
         android:background="@drawable/lengkung">
 

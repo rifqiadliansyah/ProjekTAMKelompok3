@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_item_name"
-                android:text="@string/nma"
+                android:text="Nama"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
@@ -43,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/Widget.AppCompat.Button.Colored"
-                    android:text="@string/call"
+                    android:text="Telepon"
                     android:layout_weight="1"/>
                 <Button
                     android:id="@+id/btn_message"
@@ -51,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/Widget.AppCompat.Button.Colored"
-                    android:text="@string/pesan"
+                    android:text="Pesan"
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>

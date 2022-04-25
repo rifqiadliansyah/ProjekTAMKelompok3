@@ -59,7 +59,6 @@ public class HitungMineral extends AppCompatActivity  {
                 String Kadar = kadar.getText().toString().trim();
 
                 if (TextUtils.isEmpty(BeratBadan)) {
-
                     bbpengguna.setError("Field ini tidak boleh kosong");
                 }
                 else if (TextUtils.isEmpty(Kadar)) {

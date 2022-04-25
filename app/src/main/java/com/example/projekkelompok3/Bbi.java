@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,7 +13,7 @@ import android.widget.TextView;
 
 public class Bbi extends AppCompatActivity {
 
-    EditText tinggibadan;
+    EditText tinggiBadan;
     TextView bbi;
     private RadioButton pria, wanita;
 
@@ -24,17 +25,23 @@ public class Bbi extends AppCompatActivity {
         setContentView(R.layout.activity_bbi);
         pria=findViewById(R.id.pria);
         wanita=findViewById(R.id.wanita);
-        tinggibadan=findViewById(R.id.tinggibadan);
+        tinggiBadan=findViewById(R.id.tinggibadan);
         bbi=findViewById(R.id.bbi);
         Button proses = findViewById(R.id.button1);
         proses.setOnClickListener(this::onClick);
 
-
     }
     private void onClick(View v) {
+
+        if(v.getId()==R.id.button1) {
+
         double bbi2 = 0;
-        String stringTinggiBadan = tinggibadan.getText().toString();
+        String stringTinggiBadan = tinggiBadan.getText().toString();
         double tinggibadan = Double.parseDouble(stringTinggiBadan);
+
+        if(TextUtils.isEmpty(stringTinggiBadan)){
+            tinggiBadan.setError("Field Tidak Boleh Kosong");
+        }
         if (pria.isChecked()) {
             bbi2 = (tinggibadan - 100) * 0.9;
         }
@@ -43,6 +50,8 @@ public class Bbi extends AppCompatActivity {
         }
         String bbi3=String.valueOf(bbi2);
         bbi.setText(bbi3+"");
+    }
+
     }
 
 
