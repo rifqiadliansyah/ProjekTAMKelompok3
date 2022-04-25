@@ -1,31 +1,35 @@
 package com.example.projekkelompok3;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 public class Bbi extends AppCompatActivity {
-    EditText namalengkap;
+
     EditText tinggibadan;
-    EditText bbi;
-    Button button1;
+    TextView bbi;
     private RadioButton pria, wanita;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_bbi);
-        namalengkap=findViewById(R.id.namalengkap);
         pria=findViewById(R.id.pria);
         wanita=findViewById(R.id.wanita);
         tinggibadan=findViewById(R.id.tinggibadan);
         bbi=findViewById(R.id.bbi);
         Button proses = findViewById(R.id.button1);
         proses.setOnClickListener(this::onClick);
+
+
     }
     private void onClick(View v) {
         double bbi2 = 0;
@@ -37,6 +41,12 @@ public class Bbi extends AppCompatActivity {
         if (wanita.isChecked()) {
             bbi2 = (tinggibadan - 100) * 0.85;
         }
-        String bbi3=String.valueOf(bbi2); bbi.setText(bbi3+"");
+        String bbi3=String.valueOf(bbi2);
+        bbi.setText(bbi3+"");
     }
+
+
+
+
+
 }

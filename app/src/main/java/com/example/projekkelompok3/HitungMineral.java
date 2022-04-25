@@ -11,10 +11,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public abstract class HitungMineral extends AppCompatActivity implements View.OnClickListener {
+public class HitungMineral extends AppCompatActivity  {
     private EditText bbpengguna, kadar;
     private TextView hasilmineral;
     private Button hitung;
+
 
     static double hitungMineral(double weight){
         double jumlah = 0;
@@ -43,33 +44,46 @@ public abstract class HitungMineral extends AppCompatActivity implements View.On
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_hitung_mineral);
-    bbpengguna = (EditText) findViewById(R.id.jumlahbbmineral);
-    kadar = (EditText) findViewById(R.id.kadar);
-    hasilmineral = (TextView) findViewById(R.id.hasilmineral);
-    hitung = (Button) findViewById(R.id.btnhitung);
-    hitung.setOnClickListener(new View.OnClickListener() {
+
+        bbpengguna = (EditText) findViewById(R.id.jumlahbbmineral);
+        kadar = (EditText) findViewById(R.id.kadar);
+        hasilmineral = (TextView) findViewById(R.id.hasilmineral);
+        hitung = (Button) findViewById(R.id.btnhitung);
+
+
+
+        hitung.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            if (view.getId() == R.id.btnhitung) {
                 String BeratBadan = bbpengguna.getText().toString().trim();
                 String Kadar = kadar.getText().toString().trim();
-                boolean isEmptyFields = false;
+
                 if (TextUtils.isEmpty(BeratBadan)) {
-                    isEmptyFields = true;
+
                     bbpengguna.setError("Field ini tidak boleh kosong");
                 }
-                if (TextUtils.isEmpty(Kadar)) {
-                    isEmptyFields = true;
-                    bbpengguna.setError("Field ini tidak boleh kosong");
+                else if (TextUtils.isEmpty(Kadar)) {
+                    kadar.setError("Field ini tidak boleh kosong");
                 }
-                if (!isEmptyFields) {
+                else{
                     double b = Double.parseDouble(BeratBadan);
                     double k = Double.parseDouble(Kadar);
-
-                    //
+                    if(b<10){
+                        hasilmineral.setText("Berat badan harus >= 10 kg");
+                    }else{
+                        double hasilPerhitungan = hitungMineral(b);
+                        if(hasilPerhitungan== k ){
+                            hasilmineral.setText("Kadar minum anda sudah cukup, yaitu minimal "+hasilPerhitungan+" ml");
+                        }else{
+                            hasilmineral.setText("Kadar minum kurang, yaitu minimal "+hasilPerhitungan+" ml");
+                        }
                     }
-            }
+
+                    }
+
         }
     });
     }
+
+
 }
