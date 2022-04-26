@@ -5,38 +5,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_gravity="center"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
         <ImageView
+            android:layout_marginTop="5dp"
             android:id="@+id/img_item_photo"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toEndOf="@id/img_item_photo">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_vertical"
                 android:id="@+id/tv_item_name"
-                android:text="Nama"
+                android:text="Nama RS"
                 android:textStyle="bold"
                 android:textSize="16sp"
+                android:layout_marginLeft="@dimen/layout_margin_horizontal"
                 android:layout_marginBottom="8dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="@dimen/layout_margin_horizontal"
+                  android:layout_margin="10dp">
                 <Button
                     android:id="@+id/btn_call"
                     android:drawableRight="@drawable/ic_call"
@@ -53,8 +57,8 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:text="Pesan"
                     android:layout_weight="1"/>
-            </LinearLayout>
+              </LinearLayout>
+
         </LinearLayout>
 
-    </RelativeLayout>
 </androidx.cardview.widget.CardView>

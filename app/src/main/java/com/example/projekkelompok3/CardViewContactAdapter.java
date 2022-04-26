@@ -1,5 +1,7 @@
 package com.example.projekkelompok3;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,14 +40,16 @@ import androidx.fragment.app.FragmentActivity;
             @Override
             public void onBindViewHolder(CardViewViewHolder holder, int position) {
             Kontak c = getContactList().get(position);
-            Glide.with(context).load(c.getFoto()).override(350,550).into(holder.imgPhoto);
+            Glide.with(context).load(c.getFoto()).override(1150,650).into(holder.imgPhoto);
             holder.tvName.setText(c.getNama());
+
             holder.btnCall.setOnClickListener(new CustomOnItemClickListener(position, new CustomOnItemClickListener.OnItemClickCallback() {
 
                 @Override
                 public void onItemClicked(View view, int position) {
-                            Toast.makeText(context, "Call "+getContactList().get(position).getNama(), Toast.LENGTH_SHORT).show();
-
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse("tel:" + c.getNumber()));
+                    context.startActivity(intent);
                             }
     }));
             holder.btnMessage.setOnClickListener(new CustomOnItemClickListener(position, new CustomOnItemClickListener.OnItemClickCallback() {
@@ -60,7 +64,7 @@ import androidx.fragment.app.FragmentActivity;
 
             @Override
             public int getItemCount() {
-                return getContactList().size();
+                return contactList.size();
                 }
 
             public class CardViewViewHolder extends RecyclerView.ViewHolder {

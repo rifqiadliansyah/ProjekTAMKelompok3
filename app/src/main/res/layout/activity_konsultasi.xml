@@ -8,6 +8,7 @@
     tools:context=".Konsultasi">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/layout_margin_vertical"
         android:layout_width="match_parent"
         android:id="@+id/recycler_view"
         android:layout_height="match_parent">

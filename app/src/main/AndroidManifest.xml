@@ -29,7 +29,7 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".Konsultasi"
-            android:exported="false"
+            android:exported="true"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".HomePage"
