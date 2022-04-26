@@ -22,9 +22,9 @@ public class HomeFragment extends Fragment {
 
 
         String[] datatulisan ={"Konsultasi","BBI","Hitung Mineral","Rekomendasi Olahraga",
-                "Healing","Statistik Covid"};
+                "Healing","Makanan Sehat"};
         int[] gambar={R.drawable.ic_konsultasi,R.drawable.ic_bbi,R.drawable.ic_drink,
-                R.drawable.ic_barbel,R.drawable.ic_yoga,R.drawable.ic_covid};
+                R.drawable.ic_barbel,R.drawable.ic_yoga,R.drawable.ic_foods};
 
         GridAdapter gridAdapter = new GridAdapter(getActivity().getApplicationContext(),datatulisan,gambar);
         gridView = (GridView) rootView.findViewById(R.id.gridView);
@@ -60,7 +60,7 @@ public class HomeFragment extends Fragment {
                     intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/AB3Y-4a3ZrU"));
                     startActivity(intent);
                 }
-                if(datatulisan[i].equals("Statistik Covid")){
+                if(datatulisan[i].equals("Makanan Sehat")){
                     intent = new Intent(getActivity().getApplicationContext(),StatistikCovid.class);
                     startActivity(intent);
                 }
