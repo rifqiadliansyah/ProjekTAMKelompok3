@@ -61,7 +61,7 @@ public class HomeFragment extends Fragment {
                     startActivity(intent);
                 }
                 if(datatulisan[i].equals("Makanan Sehat")){
-                    intent = new Intent(getActivity().getApplicationContext(),StatistikCovid.class);
+                    intent = new Intent(getActivity().getApplicationContext(), MakananSehat.class);
                     startActivity(intent);
                 }
             }
