@@ -3,6 +3,17 @@ package com.example.projekkelompok3;
 public class Kontak {
     private String nama;
 
+
+    private String link;
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
     public String getNama() {
         return nama;
     }

@@ -9,6 +9,12 @@ public class KontakData {
 
     public static String[] dataTelepon = new String[]{"(021)8853333","(021)29962888","(0761)47333","(021)50855555"};
 
+   public static String[] linkCompany = new String[]{
+     "https://www.mitrakeluarga.com/",
+     "https://www.siloamhospitals.com/",
+     "https://haloawalbros.com/",
+     "https://www.ekahospital.com/id"
+   };
 
 
     public static String [] dataFoto = new String []{
@@ -25,7 +31,10 @@ public class KontakData {
             contact.setNama(data[i]);
             contact.setFoto(dataFoto[i]);
             contact.setNumber(dataTelepon[i]);
+            contact.setLink(linkCompany[i]);
+
             list.add(contact);
+
             }
         return list;
         }

@@ -56,7 +56,8 @@ import androidx.fragment.app.FragmentActivity;
 
                 @Override
                 public void onItemClicked(View view, int position) {
-                            Toast.makeText(context, "Message "+getContactList().get(position).getNama(), Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse(c.getLink()));
+                    context.startActivity(intent);
                             }
             }));
 
