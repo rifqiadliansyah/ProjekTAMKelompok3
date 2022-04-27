@@ -1,11 +1,11 @@
-package com.example.projekkelompok3;
+package com.example.projekkelompok3.bottomNavPKG;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.projekkelompok3.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 

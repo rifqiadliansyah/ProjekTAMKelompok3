@@ -1,4 +1,5 @@
-package com.example.projekkelompok3;
+package com.example.projekkelompok3.Konsultasi;
+
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -8,13 +9,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-import androidx.recyclerview.widget.RecyclerView;
-import com.bumptech.glide.Glide;
-import java.util.ArrayList;
-import androidx.fragment.app.FragmentActivity;
 
-    public class CardViewContactAdapter extends RecyclerView.Adapter<CardViewContactAdapter.CardViewViewHolder> {
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.example.projekkelompok3.R;
+
+import java.util.ArrayList;
+
+public class CardViewContactAdapter extends RecyclerView.Adapter<CardViewContactAdapter.CardViewViewHolder> {
     private ArrayList<Kontak> contactList;
     private Context context;
 

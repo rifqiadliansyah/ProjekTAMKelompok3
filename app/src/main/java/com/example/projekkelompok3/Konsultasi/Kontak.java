@@ -1,4 +1,4 @@
-package com.example.projekkelompok3;
+package com.example.projekkelompok3.Konsultasi;
 
 public class Kontak {
     private String nama;

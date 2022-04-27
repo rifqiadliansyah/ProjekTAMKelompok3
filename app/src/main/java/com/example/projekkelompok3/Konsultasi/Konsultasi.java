@@ -1,13 +1,13 @@
-package com.example.projekkelompok3;
+package com.example.projekkelompok3.Konsultasi;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
+
+import com.example.projekkelompok3.R;
+
 import java.util.ArrayList;
-
-
-import android.os.Bundle;
 
 public class Konsultasi extends AppCompatActivity {
     private RecyclerView recyclerView;

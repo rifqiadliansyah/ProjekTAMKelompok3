@@ -1,4 +1,6 @@
-package com.example.projekkelompok3;
+package com.example.projekkelompok3.Konsultasi;
+
+import com.example.projekkelompok3.Konsultasi.Kontak;
 
 import java.util.ArrayList;
 

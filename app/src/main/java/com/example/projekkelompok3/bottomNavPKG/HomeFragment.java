@@ -1,4 +1,4 @@
-package com.example.projekkelompok3;
+package com.example.projekkelompok3.bottomNavPKG;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,6 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+
+import com.example.projekkelompok3.Bbi;
+import com.example.projekkelompok3.GridHome.GridAdapter;
+import com.example.projekkelompok3.HitungMineral;
+import com.example.projekkelompok3.Konsultasi.Konsultasi;
+import com.example.projekkelompok3.MakananSehat;
+import com.example.projekkelompok3.R;
+import com.example.projekkelompok3.RekomendasiOlahraga;
 
 
 public class HomeFragment extends Fragment {
@@ -44,11 +52,11 @@ public class HomeFragment extends Fragment {
                     startActivity(intent);
                 }
                 if(datatulisan[i].equals("BBI")){
-                    intent = new Intent(getActivity().getApplicationContext(),Bbi.class);
+                    intent = new Intent(getActivity().getApplicationContext(), Bbi.class);
                     startActivity(intent);
                 }
                 if(datatulisan[i].equals("Hitung Mineral")){
-                    intent = new Intent(getActivity().getApplicationContext(),HitungMineral.class);
+                    intent = new Intent(getActivity().getApplicationContext(), HitungMineral.class);
                     startActivity(intent);
                 }
                 if(datatulisan[i].equals("Rekomendasi Olahraga")){

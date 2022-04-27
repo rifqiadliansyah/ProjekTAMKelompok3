@@ -28,11 +28,11 @@
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Konsultasi"
+            android:name=".Konsultasi.Konsultasi"
             android:exported="true"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".HomePage"
+            android:name=".bottomNavPKG.HomePage"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
