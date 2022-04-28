@@ -21,6 +21,7 @@ Heafirst memiliki fitur utama :<br>
 </ul>
 Serta Fitur Tambahan :<br>
 <ul>
+    <li>Healing</li>
     <li>Rekomendasi Makanan Sehat</li>
 <ul>
 
