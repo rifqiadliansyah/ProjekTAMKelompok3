@@ -30,6 +30,7 @@ public class MakananSehat extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_makanan_sehat);
         rv  = findViewById(R.id.recycle_view);

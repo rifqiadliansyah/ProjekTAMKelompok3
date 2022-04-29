@@ -50,7 +50,9 @@
 
 
     <Button
-        android:layout_marginTop="@dimen/layout_margin_vertical"
+        android:drawableRight="@drawable/ic_youtubeicon"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="25dp"
         android:id="@+id/btn_youtube"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
