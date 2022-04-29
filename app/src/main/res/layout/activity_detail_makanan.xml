@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:id="@+id/image_view"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher">
+    </ImageView>
+
+    <TextView
+
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
+        android:id="@+id/text_viewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Makanan"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
+        android:id="@+id/tv_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"></TextView>
+
+    <TextView
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
+        android:id="@+id/tv_asal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asal"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"></TextView>
+
+
+    <Button
+        android:layout_marginTop="@dimen/layout_margin_vertical"
+        android:id="@+id/btn_youtube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Link Tutorial Masak"
+        android:textAllCaps="false"
+        app:cornerRadius="10sp"
+        ></Button>
+
+
+
+</LinearLayout>
