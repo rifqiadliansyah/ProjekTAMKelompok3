@@ -71,9 +71,11 @@ public class HitungMineral extends AppCompatActivity  {
                         hasilmineral.setText("Berat badan harus >= 10 kg");
                     }else{
                         double hasilPerhitungan = hitungMineral(b);
-                        if(hasilPerhitungan== k ){
+                        System.out.println(hasilPerhitungan +"dan kadar :"+k);
+                        if(hasilPerhitungan<= k ){
                             hasilmineral.setText("Kadar minum anda sudah cukup, yaitu minimal "+hasilPerhitungan+" ml");
-                        }else{
+                        }
+                        if(hasilPerhitungan>k){
                             hasilmineral.setText("Kadar minum kurang, yaitu minimal "+hasilPerhitungan+" ml");
                         }
                     }
