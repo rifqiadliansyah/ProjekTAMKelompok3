@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
 
         gridView.setAdapter(gridAdapter);
 
-        //KLIK FITUR
+        
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             Intent intent;
