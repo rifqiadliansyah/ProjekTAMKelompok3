@@ -2,19 +2,28 @@ package com.example.projekkelompok3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlarmManager;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.projekkelompok3.MakananSehatPKG.MineralReminder;
 
 import java.util.ArrayList;
 
 public class HitungMineral extends AppCompatActivity  {
     private EditText bbpengguna, kadar;
     private TextView hasilmineral;
-    private Button hitung;
+    private Button hitung , notif;
 
 
     static double hitungMineral(double weight){
@@ -49,8 +58,27 @@ public class HitungMineral extends AppCompatActivity  {
         kadar = (EditText) findViewById(R.id.kadar);
         hasilmineral = (TextView) findViewById(R.id.hasilmineral);
         hitung = (Button) findViewById(R.id.btnhitung);
+        notif = (Button) findViewById(R.id.btn_notif);
+        buatNotifikasiChannel();
 
 
+
+        notif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(HitungMineral.this, "Berhasil Setel pengingat", Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(HitungMineral.this, MineralReminder.class);
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(HitungMineral.this,100,
+                        intent,PendingIntent.FLAG_UPDATE_CURRENT);
+                AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+
+                long timeAtButtonClick = System.currentTimeMillis();
+                long time  = 900000;
+                alarmManager.set(AlarmManager.RTC_WAKEUP,timeAtButtonClick+time,
+                        pendingIntent);
+            }
+        });
 
         hitung.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -84,6 +112,19 @@ public class HitungMineral extends AppCompatActivity  {
 
         }
     });
+    }
+
+    public void buatNotifikasiChannel(){
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+            CharSequence nama = "ChannelNotifikasi";
+            String deskripsi = "ChannelReminder";
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel("notifikasiid",nama,importance);
+            channel.setDescription(deskripsi);
+
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
     }
 
 

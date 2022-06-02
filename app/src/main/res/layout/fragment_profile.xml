@@ -14,7 +14,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
         android:layout_gravity="center"
-        android:src="@drawable/spiderrev"></de.hdodenhof.circleimageview.CircleImageView>
+        android:src="@drawable/ic_logo"></de.hdodenhof.circleimageview.CircleImageView>
 
     <LinearLayout
         android:layout_width="341dp"
@@ -30,7 +30,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins"
             android:gravity="center"
-            android:text="Kelompok 3"
+            android:text="Heafirst"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold"></TextView>
@@ -40,67 +40,19 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:gravity="center"
-            android:text="Heafirst Member"
+            android:text="Aplikasi kesehatan"
             android:textColor="#FFD124"
             android:textSize="15sp"
             android:textStyle="bold"></TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
+        <WebView
+            android:id="@+id/web_views"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:fontFamily="@font/poppins"
-            android:text="Email :"
-            android:textColor="@color/white"
-            android:textSize="15sp"></TextView>
+            ></WebView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:fontFamily="@font/poppins"
-            android:text="kelompok3tamkelasc@gmail.com"
-            android:textColor="@color/white"
-            android:textSize="12dp"></TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:fontFamily="@font/poppins"
-            android:text="Phone Number :"
-            android:textColor="@color/white"
-            android:textSize="15sp"></TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:fontFamily="@font/poppins"
-            android:text="0822736638"
-            android:textColor="@color/white"
-            android:textSize="12sp"></TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:fontFamily="@font/poppins"
-            android:text="Bio :"
-            android:textColor="@color/white"
-            android:textSize="15sp"></TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:fontFamily="@font/poppins"
-            android:text="Love coffe and tea"
-            android:textColor="@color/white"
-            android:textSize="12sp"></TextView>
 
 
     </LinearLayout>

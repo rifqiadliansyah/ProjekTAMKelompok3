@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">projekkelompok3</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descriptionindonesia">
+        Heafirst adalah aplikasi yang menunjang<br />
+        dalam gaya hidup sehat dimana aplikasi <br />
+        ini dicipatakan oleh tiga mahasiswa univ-<br />
+        ersitas lampung yakni Rifqi Adliansyah,<br />
+        Rayhan Akbar, dan Nur Mita Utami<br />
+       </string>
 </resources>
