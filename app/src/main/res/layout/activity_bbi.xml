@@ -111,5 +111,16 @@
         android:background="@drawable/lengkung">
     </androidx.appcompat.widget.AppCompatButton>
 
+    <TextView
+        android:id="@+id/bbilama"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:hint="Test dulu gan"
+        android:background="@drawable/lengkung"
+        android:layout_marginTop="@dimen/layout_margin_vertical"
+        android:fontFamily="@font/poppins_medium"/>
+
 
 </LinearLayout>
