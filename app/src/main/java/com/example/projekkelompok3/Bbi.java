@@ -3,6 +3,7 @@ package com.example.projekkelompok3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -11,10 +12,13 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class Bbi extends AppCompatActivity {
 
     EditText tinggiBadan;
-    TextView bbi;
+    TextView bbi, historiTinggi;
     private RadioButton pria, wanita;
 
 
@@ -23,34 +27,57 @@ public class Bbi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_bbi);
+        NumberFormat formatter = new DecimalFormat("#0.00");
         pria=findViewById(R.id.pria);
         wanita=findViewById(R.id.wanita);
         tinggiBadan=findViewById(R.id.tinggibadan);
         bbi=findViewById(R.id.bbi);
+        historiTinggi = findViewById(R.id.tv_tinggiHistori);
+
+        SharedPreferences sharedPref;
+        sharedPref = getSharedPreferences("sp_tinggi",MODE_PRIVATE);
+
+
         Button proses = findViewById(R.id.button1);
-        proses.setOnClickListener(this::onClick);
+        Button histori = findViewById(R.id.btn_histori);
+
+
+        proses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                double bbi2 = 0;
+                String stringTinggiBadan = tinggiBadan.getText().toString();
+
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putString("DATA",stringTinggiBadan);
+                editor.apply();
+
+                double tinggibadan = Double.parseDouble(stringTinggiBadan);
+
+                if(TextUtils.isEmpty(stringTinggiBadan)){
+                    tinggiBadan.setError("Field Tidak Boleh Kosong");
+                }
+                if (pria.isChecked()) {
+                    bbi2 = (tinggibadan - 100) * 0.9;
+                }
+                if (wanita.isChecked()) {
+                    bbi2 = (tinggibadan - 100) * 0.85;
+                }
+                bbi.setText(formatter.format(bbi2));
+            }
+        });
+
+        histori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String dataHistoriTinggi = sharedPref.getString("DATA","");
+                historiTinggi.setVisibility(View.VISIBLE);
+                historiTinggi.setText("Tinggi sebelumnya adalah : "+dataHistoriTinggi+"cm");
+            }
+        });
 
     }
-    private void onClick(View v) {
 
-        if(v.getId()==R.id.button1) {
-
-        double bbi2 = 0;
-        String stringTinggiBadan = tinggiBadan.getText().toString();
-        double tinggibadan = Double.parseDouble(stringTinggiBadan);
-
-        if(TextUtils.isEmpty(stringTinggiBadan)){
-            tinggiBadan.setError("Field Tidak Boleh Kosong");
-        }
-        if (pria.isChecked()) {
-            bbi2 = (tinggibadan - 100) * 0.9;
-        }
-        if (wanita.isChecked()) {
-            bbi2 = (tinggibadan - 100) * 0.85;
-        }
-        String bbi3=String.valueOf(bbi2);
-        bbi.setText(bbi3+"");
-    }
 
     }
 
@@ -58,4 +85,3 @@ public class Bbi extends AppCompatActivity {
 
 
 
-}
